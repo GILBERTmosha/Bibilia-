@@ -3,145 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cover Page - Gilbert Mosha</title>
+<title>Gilbert Mosha - Maktaba ya Kazi</title>
 <style>
-    /* Rangi ya Background ya ukurasa mzima */
+    /* Muundo wa Background ya Ukurasa */
     body { 
-        background: linear-gradient(135deg, #8e44ad, #d81b60); 
+        background: linear-gradient(135deg, #4b0082, #d81b60); 
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Trebuchet MS', sans-serif;
     }
 
-    /* Kadi kuu yenye border ya dhahabu */
-    .cover-card { 
-        max-width: 450px;
+    /* Kadi Kuu */
+    .main-card { 
+        max-width: 400px;
         width: 90%;
-        background-color: white;
+        background: #ffffff;
         padding: 25px; 
-        border-radius: 30px; 
-        border: 5px solid #d4af37; /* Border ya dhahabu */
-        box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        border-radius: 50px 10px 50px 10px; 
+        border: 4px solid #d4af37; 
+        box-shadow: 0 20px 60px rgba(0,0,0,0.5);
         text-align: center;
-        position: relative;
+        overflow: hidden;
     }
 
-    /* Picha ya Yesu juu */
-    .jesus-img {
-        width: 150px;
-        height: 150px;
+    /* Picha ya Yesu */
+    .jesus-top {
+        width: 130px;
+        height: 130px;
         border-radius: 50%;
         object-fit: cover;
-        border: 4px solid #d4af37;
-        margin-top: -10px;
+        border: 3px solid #ffd700;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        margin-bottom: 10px;
     }
 
-    h1 { 
-        color: #6a1b9a; 
-        font-size: 26px;
-        margin: 15px 0 5px;
-        text-transform: uppercase;
-    }
-
-    .sub-title {
-        color: #ad1457;
+    /* Sehemu ya Tarehe Inayobadilika na Nyota */
+    .date-badge {
+        background: linear-gradient(90deg, #8e44ad, #d81b60);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 50px;
+        font-size: 14px;
         font-weight: bold;
-        margin-bottom: 20px;
-        display: block;
+        display: inline-block;
+        margin-bottom: 15px;
+        box-shadow: 0 0 10px rgba(216, 27, 96, 0.5);
+        animation: glowText 1.5s infinite alternate;
     }
 
-    /* Kitufe cha Jumanne */
-    .day-link {
+    @keyframes glowText {
+        from { box-shadow: 0 0 5px #fff; }
+        to { box-shadow: 0 0 15px #ffd700; }
+    }
+
+    h1 { color: #2c3e50; font-size: 22px; margin: 10px 0; letter-spacing: 1px; }
+
+    /* KITUFE CHA JUMANNE - KINAWAKA */
+    .btn-jumanne {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 18px 25px;
-        background: linear-gradient(to right, #8e44ad, #e91e63);
+        padding: 15px 20px;
+        background: linear-gradient(45deg, #ff0080, #7928ca);
         color: white;
         text-decoration: none;
-        border-radius: 50px;
+        border-radius: 15px;
         font-weight: bold;
-        font-size: 18px;
         margin: 20px 0;
-        box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
-        transition: 0.3s;
         border: 2px solid #fff;
+        animation: pulseGlow 2s infinite;
     }
 
-    .day-link:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    @keyframes pulseGlow {
+        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.7); }
+        70% { transform: scale(1.03); box-shadow: 0 0 0 15px rgba(233, 30, 99, 0); }
+        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(233, 30, 99, 0); }
     }
 
-    .date-tag {
-        font-size: 12px;
-        background-color: rgba(255,255,255,0.2);
-        padding: 4px 10px;
-        border-radius: 10px;
+    /* RAINBOW RING */
+    .rainbow-container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 20px auto 10px;
+        padding: 6px;
+        border-radius: 50%;
+        background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        background-size: 200% 200%;
+        animation: rotateRainbow 2s linear infinite;
     }
 
-    /* Sehemu ya chini kwa ajili ya picha yako */
-    .footer-area {
-        margin-top: 30px;
+    @keyframes rotateRainbow {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 200% 50%; }
+    }
+
+    .user-img-circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: white;
+        object-fit: cover;
+        display: block;
+        border: 2px solid white;
+    }
+
+    .footer-info {
         border-top: 1px solid #eee;
         padding-top: 15px;
+        margin-top: 10px;
     }
 
-    .user-img-small {
-        width: 55px; /* Picha ndogo kuliko ya Yesu */
-        height: 55px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid #d81b60;
-        margin-bottom: 5px;
-    }
-
-    .prepared-by {
-        font-size: 12px;
-        color: #777;
-    }
-
-    .name {
-        font-weight: bold;
-        color: #8e44ad;
-        display: block;
-    }
-
-    .flowers {
-        font-size: 20px;
-        margin: 10px 0;
-    }
+    .name-title { font-weight: bold; color: #4b0082; font-size: 18px; }
+    .phone-text { color: #d81b60; font-weight: bold; }
+    .flower-icon { font-size: 22px; margin: 5px 0; }
 </style>
 </head>
 <body>
 
-<div class="cover-card">
-    <img src="https://i.postimg.cc/QtvPx0B6/images-(20).jpg" class="jesus-img" alt="Yesu">
+<div class="main-card">
+    <img src="https://i.postimg.cc/QtvPx0B6/images-(20).jpg" class="jesus-top" alt="Yesu">
     
-    <h1>Maktaba ya Kazi</h1>
-    <span class="sub-title">"Hatua kwa Hatua na Kristo"</span>
+    <br>
+    <div class="date-badge" id="live-date">📅 Inapakia tarehe...</div>
 
-    <div class="flowers">🌸🍃🌺🍃🌸</div>
+    <h1>MAKTABA YA KAZI</h1>
+    <p style="color: #555; font-style: italic; font-size: 14px;">"Kila hatua yangu inaongozwa na Bwana"</p>
 
-    <a href="#" class="day-link">
-        <span>📅 JUMANNE</span>
-        <span class="date-tag">03 Machi 2026</span>
+    <div class="flower-icon">🌸🌿🌺🌿🌸</div>
+
+    <a href="#" class="btn-jumanne">
+        <span>🗓️ JUMANNE</span>
+        <span style="font-size: 11px; opacity: 0.9;">03 Machi 2026</span>
     </a>
 
-    <p style="font-size: 13px; color: #888;">Bonyeza kitufe hapo juu kuona kazi ya siku husika.</p>
+    <div class="flower-icon">🍃🌺🍃</div>
 
-    <div class="flowers">🌸🍃🌸</div>
-
-    <div class="footer-area">
-        <img src="https://i.postimg.cc/kg95gyKq/IMG-20260224-WA0006.jpg" class="user-img-small" alt="Gilbert Mosha">
-        <div class="prepared-by">Imeandaliwa na:</div>
-        <span class="name">Gilbert Mosha</span>
-        <div style="font-size: 11px; color: #ad1457; font-weight: bold;">0793770731</div>
+    <div class="footer-info">
+        <div class="rainbow-container">
+            <img src="https://i.postimg.cc/2SPBGWBG/PXL-20250830-105922812-NIGHT-RAW-01-COVER.jpg" class="user-img-circle" alt="Gilbert Mosha">
+        </div>
+        
+        <p style="font-size: 12px; color: #888; margin-bottom: 5px;">Imeandaliwa na kijana wa Yesu:</p>
+        <span class="name-title">Gilbert Mosha</span><br>
+        <span class="phone-text">0793770731</span>
     </div>
 </div>
+
+<script>
+    function updateDate() {
+        const dateElement = document.getElementById('live-date');
+        const now = new Date();
+        
+        // Mpangilio wa miezi ya Kiswahili
+        const miezi = [
+            "Januari", "Februari", "Machi", "Aprili", "Mei", "Juni", 
+            "Julai", "Agosti", "Septemba", "Oktoba", "Novemba", "Desemba"
+        ];
+        
+        const siku = now.getDate();
+        const mwezi = miezi[now.getMonth()];
+        const mwaka = now.getFullYear();
+        
+        // Inaandika tarehe kwenye screen
+        dateElement.innerHTML = `✨ LEO: ${siku} ${mwezi} ${mwaka} ✨`;
+    }
+
+    // Inaita function mara moja ukurasa ukifunguka
+    updateDate();
+
+    // Inakagua kila baada ya saa moja ili kuhakikisha tarehe imebadilika ikifika saa sita usiku
+    setInterval(updateDate, 3600000);
+</script>
 
 </body>
 </html>
