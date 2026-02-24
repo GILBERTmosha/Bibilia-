@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cover Page - Gilbert Mosha</title>
+<style>
+    /* Rangi ya Background ya ukurasa mzima */
+    body { 
+        background: linear-gradient(135deg, #8e44ad, #d81b60); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Kadi kuu yenye border ya dhahabu */
+    .cover-card { 
+        max-width: 450px;
+        width: 90%;
+        background-color: white;
+        padding: 25px; 
+        border-radius: 30px; 
+        border: 5px solid #d4af37; /* Border ya dhahabu */
+        box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        text-align: center;
+        position: relative;
+    }
+
+    /* Picha ya Yesu juu */
+    .jesus-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #d4af37;
+        margin-top: -10px;
+    }
+
+    h1 { 
+        color: #6a1b9a; 
+        font-size: 26px;
+        margin: 15px 0 5px;
+        text-transform: uppercase;
+    }
+
+    .sub-title {
+        color: #ad1457;
+        font-weight: bold;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    /* Kitufe cha Jumanne */
+    .day-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 25px;
+        background: linear-gradient(to right, #8e44ad, #e91e63);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 20px 0;
+        box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+        transition: 0.3s;
+        border: 2px solid #fff;
+    }
+
+    .day-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .date-tag {
+        font-size: 12px;
+        background-color: rgba(255,255,255,0.2);
+        padding: 4px 10px;
+        border-radius: 10px;
+    }
+
+    /* Sehemu ya chini kwa ajili ya picha yako */
+    .footer-area {
+        margin-top: 30px;
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+    }
+
+    .user-img-small {
+        width: 55px; /* Picha ndogo kuliko ya Yesu */
+        height: 55px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #d81b60;
+        margin-bottom: 5px;
+    }
+
+    .prepared-by {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .name {
+        font-weight: bold;
+        color: #8e44ad;
+        display: block;
+    }
+
+    .flowers {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="cover-card">
+    <img src="https://i.postimg.cc/QtvPx0B6/images-(20).jpg" class="jesus-img" alt="Yesu">
+    
+    <h1>Maktaba ya Kazi</h1>
+    <span class="sub-title">"Hatua kwa Hatua na Kristo"</span>
+
+    <div class="flowers">🌸🍃🌺🍃🌸</div>
+
+    <a href="#" class="day-link">
+        <span>📅 JUMANNE</span>
+        <span class="date-tag">03 Machi 2026</span>
+    </a>
+
+    <p style="font-size: 13px; color: #888;">Bonyeza kitufe hapo juu kuona kazi ya siku husika.</p>
+
+    <div class="flowers">🌸🍃🌸</div>
+
+    <div class="footer-area">
+        <img src="https://i.postimg.cc/kg95gyKq/IMG-20260224-WA0006.jpg" class="user-img-small" alt="Gilbert Mosha">
+        <div class="prepared-by">Imeandaliwa na:</div>
+        <span class="name">Gilbert Mosha</span>
+        <div style="font-size: 11px; color: #ad1457; font-weight: bold;">0793770731</div>
+    </div>
+</div>
+
+</body>
+</html>
