@@ -76,6 +76,28 @@
         border: 2px solid #fff;
         animation: pulseGlow 2s infinite;
     }
+        /* KITUFE CHA JUMATANO - Ocean Blue Style */
+    .btn-jumatano {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: linear-gradient(45deg, #00b4db, #0083b0); /* Rangi ya Bluu Bahari */
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        font-weight: bold;
+        margin: 20px 0;
+        border: 2px solid #fff;
+        box-shadow: 0 4px 15px rgba(0, 180, 219, 0.3);
+        animation: floatAnim 3s ease-in-out infinite; /* Inacheza juu na chini */
+    }
+
+    @keyframes floatAnim {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+
 
     @keyframes pulseGlow {
         0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.7); }
@@ -100,6 +122,7 @@
         0% { background-position: 0% 50%; }
         100% { background-position: 200% 50%; }
     }
+    
 
     .user-img-circle {
         width: 100%;
@@ -135,9 +158,14 @@
 
     <div class="flower-icon">🌸🌿🌺🌿🌸</div>
 
-    <a href="jumanne.html" class="btn-jumanne">
+    <a href="#" class="btn-jumanne">
         <span>🗓️ JUMANNE</span>
-        <span style="font-size: 11px; opacity: 0.9;">03 Machi 2026</span>
+        <span style="font-size: 11px; opacity: 0.9;">24 Februari 2026</span>
+    </a>
+    
+    <a href="#" class="btn-jumatano">
+        <span>🗓️ JUMATANO</span>
+        <span style="font-size: 11px; background: rgba(255,255,255,0.2); padding: 3px 8px; border-radius: 5px;">25 Februari 2026</span>
     </a>
 
     <div class="flower-icon">🍃🌺🍃</div>
