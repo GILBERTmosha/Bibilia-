@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neno la Uzima - Roho Mtakatifu</title>
+<style>
+    body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        display: flex; justify-content: center; align-items: center;
+        padding: 20px; margin: 0; min-height: 100vh;
+    }
+    .card { 
+        max-width: 480px; width: 100%; border: 3px solid #00d2ff; 
+        padding: 20px; border-radius: 40px; background-color: #ffffff;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.3); text-align: center;
+        position: relative; overflow: hidden; border-bottom: 12px solid #2575fc;
+    }
+
+    .back-nav {
+        display: flex; justify-content: flex-start; margin-bottom: 10px;
+    }
+    .btn-back {
+        text-decoration: none; color: #2575fc; font-size: 13px; font-weight: bold;
+        display: flex; align-items: center; gap: 5px; background: #e3f2fd;
+        padding: 5px 15px; border-radius: 50px; border: 1px solid #2575fc;
+    }
+    
+    /* PICHA ULIYOTUMA */
+    .holy-spirit-img {
+        width: 180px; height: 180px; border-radius: 50%; object-fit: cover;
+        border: 5px solid #00d2ff; box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+        margin-bottom: 10px;
+    }
+
+    h2 { color: #2575fc; margin: 10px 0; font-size: 26px; font-weight: 900; text-transform: uppercase; }
+
+    .verse-container { 
+        font-family: 'Georgia', serif; font-style: italic; color: #0d47a1; 
+        background: #e3f2fd; padding: 20px; border-radius: 20px;
+        border-left: 6px solid #00d2ff; margin: 15px 0; line-height: 1.8; font-size: 18px;
+    }
+
+    .teaching-box {
+        background: #f1f8e9; border: 1px dashed #2575fc; border-radius: 20px;
+        padding: 15px; margin: 15px 0; text-align: left;
+    }
+
+    .action-area {
+        display: flex; justify-content: center; gap: 8px; margin: 15px 0;
+    }
+    .btn-small {
+        border: none; padding: 10px 18px; border-radius: 12px;
+        font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px;
+        transition: 0.3s; font-size: 13px;
+    }
+    .btn-copy { background: #cfd8dc; color: #333; }
+    .btn-share { background: #25d366; color: white; }
+
+    .footer { 
+        margin-top: 20px; padding: 15px; background-color: #e3f2fd;
+        border-radius: 30px; border: 1px solid #bbdefb;
+    }
+    .btn-contact {
+        display: flex; align-items: center; justify-content: center; gap: 10px;
+        padding: 12px; margin: 8px 0; border-radius: 50px;
+        text-decoration: none; font-weight: bold; color: white; font-size: 15px;
+    }
+    .bg-wa { background: #128c7e; }
+    .bg-sms { background: #0277bd; }
+    .bg-call { background: #1565c0; }
+
+    .user-img { width: 70px; height: 70px; border-radius: 50%; border: 3px solid #2575fc; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="back-nav">
+        <a href="index.html" class="btn-back">⬅️ Rudi Maktaba</a>
+    </div>
+
+    <img src="https://i.ibb.co/jPSMBgKM/Gentleness.jpg" alt="Roho Mtakatifu" class="holy-spirit-img">
+    
+    <h2>Neno la Uzima</h2>
+    <p style="color: #0277bd; font-weight: bold; margin-top: -10px;">JUMATANO YA ROHO MTAKATIFU</p>
+    
+    <div id="content-to-share">
+        <div class="verse-container">
+            "Lakini tunda la Roho ni upendo, furaha, amani, uvumilivu, utu wema, fadhili, uaminifu, upole, kiasi."
+            <br><strong>— Galatia 5:22-23 —</strong>
+        </div>
+
+        <div class="teaching-box">
+            <strong style="color: #1565c0; display: block; text-align: center;">🕊️ TAFAKARI YA LEO</strong>
+            <p style="color: #0d47a1; font-size: 15px; line-height: 1.6;">
+                Roho Mtakatifu anapofanya kazi ndani yako, anazalisha **Upole** na **Amani**. Leo, ruhusu tabia ya Mungu ionekane kupitia maneno na matendo yako kwa watu wengine.
+            </p>
+        </div>
+    </div>
+
+    <div class="action-area">
+        <button class="btn-small btn-copy" onclick="copyNeno()">📋 Nakili</button>
+        <button class="btn-small btn-share" onclick="shareNeno()">📲 Shiriki</button>
+    </div>
+
+    <div class="footer">
+        <a href="https://wa.me/255793770731" class="btn-contact bg-wa">🟢 WhatsApp</a>
+        <a href="sms:0793770731" class="btn-contact bg-sms">✉️ Tuma SMS</a>
+        <a href="tel:0793770731" class="btn-contact bg-call">📞 Piga Simu</a>
+
+        <img src="https://i.postimg.cc/kg95gyKq/IMG-20260224-WA0006.jpg" class="user-img">
+        <p style="margin:5px 0; color: #1565c0;"><strong>Gilbert Mosha</strong><br><small>0793770731</small></p>
+    </div>
+</div>
+
+<script>
+    const textToShare = `📖 *NENO LA UZIMA: JUMATANO*\n\n"Tunda la Roho ni Upendo, Amani na Upole..." (Galatia 5:22)\n\n🕊️ *TAFAKARI:*\nRuhusu tabia ya Mungu ionekane kupitia upole wako leo.\n\n_Imeandaliwa na Gilbert Mosha_ ✨`;
+
+    function copyNeno() {
+        navigator.clipboard.writeText(textToShare).then(() => {
+            alert("✅ Ujumbe umenakiliwa!");
+        });
+    }
+
+    function shareNeno() {
+        const url = "whatsapp://send?text=" + encodeURIComponent(textToShare);
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>
