@@ -84,39 +84,39 @@
 
         document.getElementById('live-date').innerHTML = `✨ LEO: ${now.getDate()} ${miezi[now.getMonth()]} ${now.getFullYear()} ✨`;
 
-        // LIST YA TAREHE (Unaweza kuongeza tarehe hapa kadiri unavyotaka)
+        // TAREHE ZAKO (Zimepangwa kuanzia Jumanne 24 Feb)
         const ratiba = [
-            { d: 24, m: 2, y: 2026 }, 
-            { d: 25, m: 2, y: 2026 }, 
-            { d: 26, m: 2, y: 2026 }, 
-            { d: 27, m: 2, y: 2026 }, 
+            { d: 24, m: 2, y: 2026 }, // Jumanne (Itaanza chini)
+            { d: 25, m: 2, y: 2026 }, // Jumatano (Itafuata juu yake)
+            { d: 26, m: 2, y: 2026 }, // Alhamisi
+            { d: 27, m: 2, y: 2026 }, // Ijumaa
             { d: 28, m: 2, y: 2026 },
-            { d: 1, m: 3, y: 2026 }, 
-            { d: 2, m: 3, y: 2026 }, 
-            { d: 3, m: 3, y: 2026 }
+            { d: 1, m: 3, y: 2026 }
         ];
-
-        // Kupanga ili ya hivi karibuni iwe juu
-        let listIliyopangwa = ratiba.slice().reverse();
 
         container.innerHTML = "";
         
-        listIliyopangwa.forEach(item => {
+        // Tunazunguka (loop) kawaida ili ya kwanza kwenye ratiba iwe ya kwanza kutengenezwa (Chini)
+        ratiba.forEach(item => {
             let tareheKazi = new Date(item.y, item.m - 1, item.d);
 
-            // Inaonyesha kitufe TU kama tarehe ya leo imefika au kupita
+            // Inaonyesha kitufe TU kama siku imefika
             if (now >= tareheKazi) {
                 let sikuJina = sikuZaWiki[tareheKazi.getDay()];
                 let sikuP = String(item.d).padStart(2, '0');
                 let mweziP = String(item.m).padStart(2, '0');
                 let fileName = `${sikuP}-${mweziP}-${item.y}.html`;
 
-                container.innerHTML += `
+                // Tunatumia "prepend" badala ya "+=" ili mpya iwe inaingia juu ya mwenzake
+                let buttonHTML = `
                     <a href="${fileName}" class="btn-style day-${tareheKazi.getDay()}">
                         <span>🗓️ ${sikuJina}</span>
                         <span style="font-size:11px; opacity:0.8;">${item.d} ${miezi[item.m-1].substring(0,3)}</span>
                     </a>
                 `;
+                
+                // Hapa: prepend inaweka mpya juu ya iliyopo
+                container.insertAdjacentHTML('afterbegin', buttonHTML);
             }
         });
     }
