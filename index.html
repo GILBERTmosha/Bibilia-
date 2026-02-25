@@ -3,140 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Neno la Uzima - Gilbert Mosha</title>
+<title>Gilbert Mosha - Maktaba ya Kazi</title>
 <style>
     body { 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        background: linear-gradient(135deg, #4b0082, #d81b60); 
         display: flex; justify-content: center; align-items: center;
-        padding: 20px; margin: 0; min-height: 100vh;
+        min-height: 100vh; margin: 0; font-family: 'Trebuchet MS', sans-serif;
     }
-    .card { 
-        max-width: 480px; width: 100%; border: 2px solid #d4af37; 
-        padding: 20px; border-radius: 40px; background-color: #ffffff;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.1); text-align: center;
-        position: relative; overflow: hidden; border-bottom: 12px solid #d4af37;
+    .main-card { 
+        max-width: 400px; width: 90%; background: #ffffff; padding: 25px; 
+        border-radius: 50px 10px 50px 10px; border: 4px solid #d4af37; 
+        box-shadow: 0 20px 60px rgba(0,0,0,0.5); text-align: center;
     }
-
-    /* KITUFE CHA RUDI JUU */
-    .back-nav {
-        display: flex; justify-content: flex-start; margin-bottom: 10px;
-    }
-    .btn-back {
-        text-decoration: none; color: #d4af37; font-size: 13px; font-weight: bold;
-        display: flex; align-items: center; gap: 5px; background: #fff9f0;
-        padding: 5px 15px; border-radius: 50px; border: 1px solid #d4af37;
-    }
+    .jesus-top { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid #ffd700; margin-bottom: 10px; }
     
-    .jesus-img {
-        width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
-        border: 4px solid #d4af37; box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
-        margin-bottom: 10px;
+    .date-badge {
+        background: linear-gradient(90deg, #8e44ad, #d81b60); color: white;
+        padding: 8px 20px; border-radius: 50px; font-size: 14px; font-weight: bold;
+        display: inline-block; margin-bottom: 15px; animation: glow 1.5s infinite alternate;
+    }
+    @keyframes glow { from { box-shadow: 0 0 5px #fff; } to { box-shadow: 0 0 15px #ffd700; } }
+
+    .btn-style {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 15px 20px; color: white; text-decoration: none;
+        border-radius: 15px; font-weight: bold; margin: 10px 0;
+        border: 2px solid #fff; transition: 0.3s;
     }
 
-    h2 { color: #d4af37; margin: 10px 0; font-size: 26px; font-weight: 900; text-transform: uppercase; }
+    /* Rangi kulingana na siku */
+    .day-2 { background: linear-gradient(45deg, #ff0080, #7928ca); animation: pulse 2s infinite; }
+    .day-3 { background: linear-gradient(45deg, #00b4db, #0083b0); }
+    .day-4 { background: linear-gradient(45deg, #11998e, #38ef7d); }
+    .day-5 { background: linear-gradient(45deg, #f093fb, #f5576c); }
+    .day-6 { background: linear-gradient(45deg, #4facfe, #00f2fe); }
+    .day-0 { background: linear-gradient(45deg, #ff9a9e, #fecfef); }
+    .day-1 { background: linear-gradient(45deg, #667eea, #764ba2); }
 
-    .verse-container { 
-        font-family: 'Georgia', serif; font-style: italic; color: #4e342e; 
-        background: #fff9f0; padding: 20px; border-radius: 20px;
-        border-left: 6px solid #d4af37; margin: 15px 0; line-height: 1.8; font-size: 18px;
-    }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
 
-    .teaching-box {
-        background: #fdfaf4; border: 1px dashed #d4af37; border-radius: 20px;
-        padding: 15px; margin: 15px 0; text-align: left;
+    .rainbow-container {
+        width: 100px; height: 100px; margin: 20px auto 10px; padding: 6px; border-radius: 50%;
+        background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        background-size: 200% 200%; animation: rotate 2s linear infinite;
     }
-
-    /* SEHEMU YA COPY & SHARE */
-    .action-area {
-        display: flex; justify-content: center; gap: 8px; margin: 15px 0;
-    }
-    .btn-small {
-        border: none; padding: 8px 15px; border-radius: 12px;
-        font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px;
-        transition: 0.3s; font-size: 13px;
-    }
-    .btn-copy { background: #f0f0f0; color: #333; border: 1px solid #ccc; }
-    .btn-share { background: #25d366; color: white; }
-
-    /* SEHEMU YA MAWASILIANO (SMS & CALL) */
-    .footer { 
-        margin-top: 20px; padding: 15px; background-color: #fdfaf4;
-        border-radius: 30px; border: 1px solid #eee;
-    }
-    .btn-contact {
-        display: flex; align-items: center; justify-content: center; gap: 10px;
-        padding: 12px; margin: 8px 0; border-radius: 50px;
-        text-decoration: none; font-weight: bold; color: white; font-size: 15px;
-    }
-    .bg-wa { background: linear-gradient(45deg, #25d366, #128c7e); }
-    .bg-sms { background: linear-gradient(45deg, #f39c12, #d35400); }
-    .bg-call { background: linear-gradient(45deg, #8b4513, #5d4037); }
-
-    .user-img { width: 65px; height: 65px; border-radius: 50%; border: 2px solid #d4af37; margin-top: 10px; }
+    @keyframes rotate { 0% { background-position: 0% 50%; } 100% { background-position: 200% 50%; } }
+    .user-img { width: 100%; height: 100%; border-radius: 50%; background: white; object-fit: cover; border: 2px solid white; }
+    .name-title { font-weight: bold; color: #4b0082; font-size: 18px; }
 </style>
 </head>
 <body>
 
-<div class="card">
-    <div class="back-nav">
-        <a href="index.html" class="btn-back">⬅️ Rudi Maktaba</a>
-    </div>
+<div class="main-card">
+    <img src="https://i.postimg.cc/QtvPx0B6/images-(20).jpg" class="jesus-top">
+    <br>
+    <div class="date-badge" id="live-date">📅 Tarehe...</div>
 
-    <img src="https://i.postimg.cc/QtvPx0B6/images-(20).jpg" class="jesus-img">
-    
-    <h2>Neno la Uzima</h2>
-    
-    <div id="content-to-share">
-        <div class="verse-container">
-            "Msaada wangu u katika Bwana, aliyezifanya mbingu na nchi. Bwana atakulinda na mabaya yote, ataiweka roho yako."
-            <br><strong>— Zaburi 121 —</strong>
+    <h1>MAKTABA YA KAZI</h1>
+    <p style="color: #555; font-style: italic; font-size: 14px;">"Kila hatua yangu inaongozwa na Bwana"</p>
+
+    <div id="vifungo-box">
         </div>
 
-        <div class="teaching-box">
-            <strong style="color: #8b4513; display: block; text-align: center;">💡 FUNDISHO LA LEO</strong>
-            <p style="color: #5d4037; font-size: 15px; line-height: 1.6;">
-                Mpendwa, ulinzi wako hautoki kwa binadamu, bali kwa Mungu aliyekuumba. Yeye halali wala hapumziki kukulinda. Usiogope!
-            </p>
+    <div class="footer-info">
+        <div class="rainbow-container">
+            <img src="https://i.ibb.co/mVcyBZf3/1766639899602.png" class="user-img">
         </div>
-    </div>
-
-    <div class="action-area">
-        <button class="btn-small btn-copy" onclick="copyNeno()">📋 Nakili Neno</button>
-        <button class="btn-small btn-share" onclick="shareNeno()">📲 Share WhatsApp</button>
-    </div>
-
-    <div class="footer">
-        <a href="https://wa.me/255793770731?text=Shalom%20Gilbert%2C%20nimebarikiwa%20na%20Neno." class="btn-contact bg-wa">
-            🟢 WhatsApp Baraka
-        </a>
-        
-        <a href="sms:0793770731?body=Shalom%20Gilbert%2C%20nimepokea%20Neno%20la%20leo." class="btn-contact bg-sms">
-            ✉️ Tuma SMS ya Shukurani
-        </a>
-
-        <a href="tel:0793770731" class="btn-contact bg-call">
-            📞 Piga Simu Sasa
-        </a>
-
-        <img src="https://i.postimg.cc/kg95gyKq/IMG-20260224-WA0006.jpg" class="user-img">
-        <p style="margin:5px 0;"><strong>Gilbert Mosha</strong><br><small>0793770731</small></p>
+        <span class="name-title">Gilbert Mosha</span><br>
+        <span style="color:#d81b60; font-weight:bold;">0793770731</span>
     </div>
 </div>
 
 <script>
-    const textToShare = `📖 *NENO LA UZIMA*\n\n"Msaada wangu u katika Bwana, aliyezifanya mbingu na nchi..." (Zaburi 121)\n\n💡 *FUNDISHO:*\nMungu halali wala hapumziki kukulinda. Usiogope!\n\n_Imeandaliwa na Gilbert Mosha_ ✨`;
+    function generateSmartButtons() {
+        const container = document.getElementById('vifungo-box');
+        const now = new Date();
+        
+        const sikuZaWiki = ["JUMAPILI", "JUMATATU", "JUMANNE", "JUMATANO", "ALHAMISI", "IJUMAA", "JUMAMOSI"];
+        const miezi = ["Januari", "Februari", "Machi", "Aprili", "Mei", "Juni", "Julai", "Agosti", "Septemba", "Oktoba", "Novemba", "Desemba"];
 
-    function copyNeno() {
-        navigator.clipboard.writeText(textToShare).then(() => {
-            alert("✅ Neno limenakiliwa tayari!");
+        document.getElementById('live-date').innerHTML = `✨ LEO: ${now.getDate()} ${miezi[now.getMonth()]} ${now.getFullYear()} ✨`;
+
+        // LIST YA TAREHE (Unaweza kuongeza tarehe hapa kadiri unavyotaka)
+        const ratiba = [
+            { d: 24, m: 2, y: 2026 }, 
+            { d: 25, m: 2, y: 2026 }, 
+            { d: 26, m: 2, y: 2026 }, 
+            { d: 27, m: 2, y: 2026 }, 
+            { d: 28, m: 2, y: 2026 },
+            { d: 1, m: 3, y: 2026 }, 
+            { d: 2, m: 3, y: 2026 }, 
+            { d: 3, m: 3, y: 2026 }
+        ];
+
+        // Kupanga ili ya hivi karibuni iwe juu
+        let listIliyopangwa = ratiba.slice().reverse();
+
+        container.innerHTML = "";
+        
+        listIliyopangwa.forEach(item => {
+            let tareheKazi = new Date(item.y, item.m - 1, item.d);
+
+            // Inaonyesha kitufe TU kama tarehe ya leo imefika au kupita
+            if (now >= tareheKazi) {
+                let sikuJina = sikuZaWiki[tareheKazi.getDay()];
+                let sikuP = String(item.d).padStart(2, '0');
+                let mweziP = String(item.m).padStart(2, '0');
+                let fileName = `${sikuP}-${mweziP}-${item.y}.html`;
+
+                container.innerHTML += `
+                    <a href="${fileName}" class="btn-style day-${tareheKazi.getDay()}">
+                        <span>🗓️ ${sikuJina}</span>
+                        <span style="font-size:11px; opacity:0.8;">${item.d} ${miezi[item.m-1].substring(0,3)}</span>
+                    </a>
+                `;
+            }
         });
     }
 
-    function shareNeno() {
-        const url = "whatsapp://send?text=" + encodeURIComponent(textToShare);
-        window.location.href = url;
-    }
+    generateSmartButtons();
+    setInterval(generateSmartButtons, 3600000); 
 </script>
 
 </body>
