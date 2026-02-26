@@ -1,5 +1,9 @@
 # 📚 Maktaba ya Kazi - Gilbert Mosha
 
+<p align="center">
+  <img src="gilbert.jpg" alt="Gilbert Mosha" width="150" height="150" style="border-radius: 50%; border: 4px solid #d4af37;">
+</p>
+
 Karibu kwenye **Maktaba ya Kazi**, mfumo rahisi na wa kisasa wa kuhifadhi na kusoma masomo ya kiroho na neno la uzima kila siku. Mradi huu umeundwa maalum kwa ajili ya Gilbert Mosha kusaidia usambazaji wa neno la Mungu kwa njia ya kidijitali.
 
 ---
