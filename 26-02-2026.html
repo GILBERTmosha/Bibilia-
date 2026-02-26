@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neno la Uzima - Ushindi katika Kristo</title>
+<style>
+    body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+        display: flex; justify-content: center; align-items: center;
+        padding: 20px; margin: 0; min-height: 100vh;
+    }
+    .card { 
+        max-width: 480px; width: 100%; border: 3px solid #ff4500; 
+        padding: 20px; border-radius: 40px; background-color: #ffffff;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.4); text-align: center;
+        position: relative; overflow: hidden; border-bottom: 12px solid #ff4500;
+    }
+
+    .back-nav {
+        display: flex; justify-content: flex-start; margin-bottom: 10px;
+    }
+    .btn-back {
+        text-decoration: none; color: #ff4500; font-size: 13px; font-weight: bold;
+        display: flex; align-items: center; gap: 5px; background: #fff5ee;
+        padding: 5px 15px; border-radius: 50px; border: 1px solid #ff4500;
+    }
+    
+    /* Picha ya Msalaba/Ushindi */
+    .victory-img {
+        width: 180px; height: 180px; border-radius: 50%; object-fit: cover;
+        border: 5px solid #ff4500; box-shadow: 0 0 20px rgba(255, 69, 0, 0.4);
+        margin-bottom: 10px;
+    }
+
+    h2 { color: #ff4500; margin: 10px 0; font-size: 26px; font-weight: 900; text-transform: uppercase; }
+
+    .verse-container { 
+        font-family: 'Georgia', serif; font-style: italic; color: #4a148c; 
+        background: #fff5ee; padding: 20px; border-radius: 20px;
+        border-left: 6px solid #ff4500; margin: 15px 0; line-height: 1.8; font-size: 18px;
+    }
+
+    .teaching-box {
+        background: #fafafa; border: 1px dashed #ff4500; border-radius: 20px;
+        padding: 15px; margin: 15px 0; text-align: left;
+    }
+
+    .action-area {
+        display: flex; justify-content: center; gap: 8px; margin: 15px 0;
+    }
+    .btn-small {
+        border: none; padding: 10px 18px; border-radius: 12px;
+        font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px;
+        transition: 0.3s; font-size: 13px;
+    }
+    .btn-copy { background: #e0e0e0; color: #333; }
+    .btn-share { background: #25d366; color: white; }
+
+    .footer { 
+        margin-top: 20px; padding: 15px; background-color: #fff5ee;
+        border-radius: 30px; border: 1px solid #ffe4e1;
+    }
+    .btn-contact {
+        display: flex; align-items: center; justify-content: center; gap: 10px;
+        padding: 12px; margin: 8px 0; border-radius: 50px;
+        text-decoration: none; font-weight: bold; color: white; font-size: 15px;
+    }
+    .bg-wa { background: #128c7e; }
+    .bg-sms { background: #d84315; }
+    .bg-call { background: #37474f; }
+
+    .user-img { width: 70px; height: 70px; border-radius: 50%; border: 3px solid #ff4500; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="back-nav">
+        <a href="index.html" class="btn-back">⬅️ Rudi Maktaba</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1544427928-c49cddee6eac?q=80&w=500&auto=format&fit=crop" alt="Victory" class="victory-img">
+    
+    <h2>Neno la Uzima</h2>
+    <p style="color: #bf360c; font-weight: bold; margin-top: -10px;">ALHAMISI YA USHINDI</p>
+    
+    <div class="verse-container">
+        "Lakini katika mambo hayo yote tunashinda, na zaidi ya kushinda, kwa yeye aliyetupenda."
+        <br><strong>— Warumi 8:37 —</strong>
+    </div>
+
+    <div class="teaching-box">
+        <strong style="color: #ff4500; display: block; text-align: center;">🛡️ SIMAMA IMARA</strong>
+        <p style="color: #3e2723; font-size: 15px; line-height: 1.6;">
+            Mpendwa Gilbert, leo ikumbuke ahadi ya ushindi. Haijalishi vita ni kubwa kiasi gani, Kristo alishamaliza kazi msalabani. Wewe si mshindwa, bali ni mshindi mkuu kupitia Yeye.
+        </p>
+    </div>
+
+    <div class="action-area">
+        <button class="btn-small btn-copy" onclick="copyNeno()">📋 Nakili</button>
+        <button class="btn-small btn-share" onclick="shareNeno()">📲 Shiriki</button>
+    </div>
+
+    <div class="footer">
+        <a href="javascript:void(0)" onclick="sendWhatsApp()" class="btn-contact bg-wa">🟢 WhatsApp</a>
+        <a href="javascript:void(0)" onclick="sendSMS()" class="btn-contact bg-sms">✉️ Tuma SMS</a>
+        <a href="tel:0793770731" class="btn-contact bg-call">📞 Piga Simu</a>
+
+        <img src="https://i.postimg.cc/kg95gyKq/IMG-20260224-WA0006.jpg" class="user-img">
+        <p style="margin:5px 0; color: #ff4500;"><strong>Gilbert Mosha</strong><br><small>0793770731</small></p>
+    </div>
+</div>
+
+<script>
+    const fullMessage = `📖 *NENO LA UZIMA: ALHAMISI*\n\n"Tunashinda, na zaidi ya kushinda, kwa yeye aliyetupenda." (Warumi 8:37)\n\n🛡️ *TAFAKARI:*\nHaijalishi vita ni kubwa kiasi gani, Kristo alishamaliza kazi msalabani. Wewe ni mshindi!\n\n_Imeandaliwa na Gilbert Mosha_ ✨`;
+
+    function copyNeno() {
+        navigator.clipboard.writeText(fullMessage).then(() => {
+            alert("✅ Ujumbe wa Alhamisi umenakiliwa!");
+        });
+    }
+
+    function shareNeno() {
+        const url = "whatsapp://send?text=" + encodeURIComponent(fullMessage);
+        window.location.href = url;
+    }
+
+    function sendWhatsApp() {
+        const url = "https://wa.me/255793770731?text=" + encodeURIComponent("Shalom Gilbert, nimebarikiwa na Neno la Alhamisi:\n\n" + fullMessage);
+        window.location.href = url;
+    }
+
+    function sendSMS() {
+        const smsUrl = "sms:0793770731?body=" + encodeURIComponent(fullMessage);
+        window.location.href = smsUrl;
+    }
+</script>
+
+</body>
+</html>
+
