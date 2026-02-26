@@ -3,48 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Neno la Uzima - Ushindi katika Kristo</title>
+<title>Neno la Uzima - Gilbert Mosha</title>
 <style>
     body { 
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+        background: linear-gradient(135deg, #4b0082 0%, #000000 100%);
         display: flex; justify-content: center; align-items: center;
         padding: 20px; margin: 0; min-height: 100vh;
     }
     .card { 
-        max-width: 480px; width: 100%; border: 3px solid #ff4500; 
+        max-width: 480px; width: 100%; border: 3px solid #d4af37; 
         padding: 20px; border-radius: 40px; background-color: #ffffff;
-        box-shadow: 0 25px 50px rgba(0,0,0,0.4); text-align: center;
-        position: relative; overflow: hidden; border-bottom: 12px solid #ff4500;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.5); text-align: center;
+        position: relative; overflow: hidden; border-bottom: 12px solid #d4af37;
     }
 
     .back-nav {
         display: flex; justify-content: flex-start; margin-bottom: 10px;
     }
     .btn-back {
-        text-decoration: none; color: #ff4500; font-size: 13px; font-weight: bold;
-        display: flex; align-items: center; gap: 5px; background: #fff5ee;
-        padding: 5px 15px; border-radius: 50px; border: 1px solid #ff4500;
+        text-decoration: none; color: #d4af37; font-size: 13px; font-weight: bold;
+        display: flex; align-items: center; gap: 5px; background: #fff9f0;
+        padding: 5px 15px; border-radius: 50px; border: 1px solid #d4af37;
     }
     
-    /* Picha ya Msalaba/Ushindi */
-    .victory-img {
-        width: 180px; height: 180px; border-radius: 50%; object-fit: cover;
-        border: 5px solid #ff4500; box-shadow: 0 0 20px rgba(255, 69, 0, 0.4);
+    /* Picha ya Yesu Imerudi */
+    .jesus-img {
+        width: 170px; height: 170px; border-radius: 50%; object-fit: cover;
+        border: 5px solid #d4af37; box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
         margin-bottom: 10px;
     }
 
-    h2 { color: #ff4500; margin: 10px 0; font-size: 26px; font-weight: 900; text-transform: uppercase; }
+    h2 { color: #4b0082; margin: 10px 0; font-size: 26px; font-weight: 900; text-transform: uppercase; }
 
     .verse-container { 
-        font-family: 'Georgia', serif; font-style: italic; color: #4a148c; 
-        background: #fff5ee; padding: 20px; border-radius: 20px;
-        border-left: 6px solid #ff4500; margin: 15px 0; line-height: 1.8; font-size: 18px;
+        font-family: 'Georgia', serif; font-style: italic; color: #4e342e; 
+        background: #fff9f0; padding: 20px; border-radius: 20px;
+        border-left: 6px solid #d4af37; margin: 15px 0; line-height: 1.8; font-size: 18px;
     }
 
+    /* Sehemu ya Mafunzo */
     .teaching-box {
-        background: #fafafa; border: 1px dashed #ff4500; border-radius: 20px;
+        background: #fdfaf4; border: 1px dashed #d4af37; border-radius: 20px;
         padding: 15px; margin: 15px 0; text-align: left;
+    }
+    .teaching-title {
+        color: #8b4513; display: block; text-align: center; 
+        font-weight: bold; margin-bottom: 8px; text-decoration: underline;
     }
 
     .action-area {
@@ -59,8 +64,8 @@
     .btn-share { background: #25d366; color: white; }
 
     .footer { 
-        margin-top: 20px; padding: 15px; background-color: #fff5ee;
-        border-radius: 30px; border: 1px solid #ffe4e1;
+        margin-top: 20px; padding: 15px; background-color: #fdfaf4;
+        border-radius: 30px; border: 1px solid #eee;
     }
     .btn-contact {
         display: flex; align-items: center; justify-content: center; gap: 10px;
@@ -68,10 +73,10 @@
         text-decoration: none; font-weight: bold; color: white; font-size: 15px;
     }
     .bg-wa { background: #128c7e; }
-    .bg-sms { background: #d84315; }
-    .bg-call { background: #37474f; }
+    .bg-sms { background: #d35400; }
+    .bg-call { background: #4b0082; }
 
-    .user-img { width: 70px; height: 70px; border-radius: 50%; border: 3px solid #ff4500; margin-top: 10px; }
+    .user-img { width: 70px; height: 70px; border-radius: 50%; border: 3px solid #d4af37; margin-top: 10px; }
 </style>
 </head>
 <body>
@@ -81,20 +86,22 @@
         <a href="index.html" class="btn-back">⬅️ Rudi Maktaba</a>
     </div>
 
-    <img src="https://images.unsplash.com/photo-1544427928-c49cddee6eac?q=80&w=500&auto=format&fit=crop" alt="Victory" class="victory-img">
+    <img src="https://i.postimg.cc/QtvPx0B6/images-(20).jpg" class="jesus-img">
     
     <h2>Neno la Uzima</h2>
-    <p style="color: #bf360c; font-weight: bold; margin-top: -10px;">ALHAMISI YA USHINDI</p>
+    <p style="color: #d4af37; font-weight: bold; margin-top: -10px;">ALHAMISI, 26 FEBRUARI 2026</p>
     
     <div class="verse-container">
-        "Lakini katika mambo hayo yote tunashinda, na zaidi ya kushinda, kwa yeye aliyetupenda."
-        <br><strong>— Warumi 8:37 —</strong>
+        "Nami nitafanya agano la amani pamoja nao; litakuwa agano la milele pamoja nao."
+        <br><strong>— Ezekieli 37:26 —</strong>
     </div>
 
     <div class="teaching-box">
-        <strong style="color: #ff4500; display: block; text-align: center;">🛡️ SIMAMA IMARA</strong>
-        <p style="color: #3e2723; font-size: 15px; line-height: 1.6;">
-            Mpendwa Gilbert, leo ikumbuke ahadi ya ushindi. Haijalishi vita ni kubwa kiasi gani, Kristo alishamaliza kazi msalabani. Wewe si mshindwa, bali ni mshindi mkuu kupitia Yeye.
+        <span class="teaching-title">💡 MAFUNZO YA LEO</span>
+        <p style="color: #5d4037; font-size: 15px; line-height: 1.6;">
+            1. <b>Agano la Mungu:</b> Mungu anapoahidi amani, si ya muda mfupi, bali ni agano la milele. <br>
+            2. <b>Ulinzi wa Kiroho:</b> Katikati ya misukosuko, amani ya Kristo inalinda moyo na nia yako.<br>
+            3. <b>Utulivu:</b> Usihangaike na kesho, amini kuwa Mungu ameshaweka agano la kukuvusha kwa salama.
         </p>
     </div>
 
@@ -109,16 +116,16 @@
         <a href="tel:0793770731" class="btn-contact bg-call">📞 Piga Simu</a>
 
         <img src="https://i.postimg.cc/kg95gyKq/IMG-20260224-WA0006.jpg" class="user-img">
-        <p style="margin:5px 0; color: #ff4500;"><strong>Gilbert Mosha</strong><br><small>0793770731</small></p>
+        <p style="margin:5px 0;"><strong>Gilbert Mosha</strong><br><small>0793770731</small></p>
     </div>
 </div>
 
 <script>
-    const fullMessage = `📖 *NENO LA UZIMA: ALHAMISI*\n\n"Tunashinda, na zaidi ya kushinda, kwa yeye aliyetupenda." (Warumi 8:37)\n\n🛡️ *TAFAKARI:*\nHaijalishi vita ni kubwa kiasi gani, Kristo alishamaliza kazi msalabani. Wewe ni mshindi!\n\n_Imeandaliwa na Gilbert Mosha_ ✨`;
+    const fullMessage = `📖 *NENO LA UZIMA: ALHAMISI*\n\n"Nami nitafanya agano la amani pamoja nao..." (Ezekieli 37:26)\n\n💡 *MAFUNZO:*\n1. Mungu ameweka agano la milele nawe.\n2. Amani ya Kristo inalinda moyo wako.\n3. Usihangaike, Mungu yuko upande wako.\n\n_Imeandaliwa na Gilbert Mosha_ ✨`;
 
     function copyNeno() {
         navigator.clipboard.writeText(fullMessage).then(() => {
-            alert("✅ Ujumbe wa Alhamisi umenakiliwa!");
+            alert("✅ Ujumbe umenakiliwa!");
         });
     }
 
@@ -128,16 +135,15 @@
     }
 
     function sendWhatsApp() {
-        const url = "https://wa.me/255793770731?text=" + encodeURIComponent("Shalom Gilbert, nimebarikiwa na Neno la Alhamisi:\n\n" + fullMessage);
+        const url = "https://wa.me/255793770731?text=" + encodeURIComponent("Shalom Gilbert, nimebarikiwa na Neno la leo:\n\n" + fullMessage);
         window.location.href = url;
     }
 
     function sendSMS() {
-        const smsUrl = "sms:0793770731?body=" + encodeURIComponent(fullMessage);
+        const smsUrl = "sms:0793770731?body=" + encodeURIComponent("Shalom, nimepokea Neno la leo: " + fullMessage);
         window.location.href = smsUrl;
     }
 </script>
 
 </body>
 </html>
-
