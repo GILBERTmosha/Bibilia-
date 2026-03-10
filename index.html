@@ -5,66 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="google-site-verification" content="google177c3d8e64bb637a" />
+    <title>MOSHA BIBILIA - Neno la Uzima kwa Mpendwa</title>
+    <meta name="description" content="Karibu MOSHA BIBILIA. Pata mafundisho ya kila siku, neno la uzima, na mwongozo wa kiroho kutoka kwa Gilbert Mosha. Kila hatua inaongozwa na Bwana.">
+    <meta name="keywords" content="Mosha Bibilia, Gilbert Mosha, Neno la Uzima, Mafundisho ya Bibilia Tanzania, MoCU ICT, Gilbert Peter Mosha">
+    <meta name="author" content="Gilbert Peter Mosha">
     
-    <title>MOSHA BIBILIA - Gilbert Mosha</title>
-    <meta name="description" content="MOSHA BIBILIA: Mafundisho ya kila siku na neno la uzima kutoka kwa Gilbert Mosha.">
-    <meta name="keywords" content="Mosha Bibilia, Gilbert Mosha, Bibilia, Neno la Uzima">
+    <meta property="og:title" content="MOSHA BIBILIA - Gilbert Mosha">
+    <meta property="og:description" content="Pata neno la uzima kila siku. Imeandaliwa na Gilbert Mosha.">
+    <meta property="og:image" content="https://i.ibb.co/mVcyBZf3/1766639899602.png">
+    <meta property="og:url" content="https://gilbertmosha.github.io/">
 
     <style>
         :root { --primary: #4b0082; --secondary: #d4af37; }
-
-        /* KUFICHA GOOGLE BAR ISIKERE MASHABIKI */
+        
         iframe.goog-te-banner-frame, .goog-te-banner-frame.skiptranslate { display: none !important; }
-        body { top: 0px !important; position: static !important; font-family: 'Trebuchet MS', sans-serif; background: linear-gradient(135deg, var(--primary), #d81b60); margin: 0; display: flex; justify-content: center; min-height: 100vh; }
+        body { top: 0px !important; position: static !important; font-family: 'Trebuchet MS', sans-serif; background: linear-gradient(135deg, #4b0082, #d81b60); margin: 0; display: flex; justify-content: center; min-height: 100vh; }
         #google_translate_element { display: none; }
 
-        .main-card { max-width: 400px; width: 92%; background: #fff; padding: 25px; border-radius: 50px 10px; border: 4px solid var(--secondary); text-align: center; margin: 20px 0; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+        .main-card { max-width: 400px; width: 92%; background: #fff; padding: 25px; border-radius: 40px; border: 3px solid var(--secondary); text-align: center; margin: 20px 0; box-shadow: 0 20px 50px rgba(0,0,0,0.3); position: relative; }
         
-        /* LUGHA SW & EN */
-        .lang-switcher { display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; }
-        .lang-btn { background: #f8f9fa; border: 2px solid #ddd; padding: 8px 18px; border-radius: 50px; cursor: pointer; font-size: 14px; font-weight: bold; transition: 0.3s; }
-        .lang-btn:hover { border-color: var(--secondary); background: #fffdf0; }
+        .jesus-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid var(--secondary); margin: 0 auto 15px; display: block; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
 
-        .jesus-top { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 4px solid var(--secondary); margin-bottom: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-        .date-badge { background: linear-gradient(90deg, #8e44ad, #d81b60); color: white; padding: 10px 25px; border-radius: 50px; font-size: 14px; font-weight: bold; margin-bottom: 20px; display: inline-block; }
+        .date-badge { background: linear-gradient(90deg, #8e44ad, #d81b60); color: white; padding: 8px 20px; border-radius: 50px; font-size: 13px; font-weight: bold; margin-bottom: 15px; display: inline-block; }
 
-        .btn-style { display: flex; justify-content: space-between; align-items: center; padding: 16px 22px; color: white; text-decoration: none; border-radius: 18px; font-weight: bold; margin: 12px 0; border: 2px solid #fff; box-shadow: 0 5px 10px rgba(0,0,0,0.1); transition: 0.3s; }
+        .reminder-box {
+            background: #fff3cd; color: #856404; border: 1px dashed #ffeeba;
+            padding: 10px; border-radius: 15px; font-size: 13px; font-weight: bold;
+            margin-bottom: 15px; animation: bounce 2s infinite;
+        }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+
+        .brand-name { font-size: 26px; font-weight: 900; color: var(--primary); margin: 5px 0; text-transform: uppercase; }
+
+        .btn-style { display: flex; justify-content: space-between; align-items: center; padding: 16px 22px; color: white; text-decoration: none; border-radius: 18px; font-weight: bold; margin: 12px 0; border: 2px solid #fff; transition: 0.3s; }
         
         /* Rangi za Siku */
-        .color-2 { background: linear-gradient(45deg, #ff0080, #7928ca); } /* Jumanne */
-        .color-3 { background: linear-gradient(45deg, #00b4db, #0083b0); } /* Jumatano */
-        .color-4 { background: linear-gradient(45deg, #11998e, #38ef7d); } /* Alhamisi */
-        .color-5 { background: linear-gradient(45deg, #f093fb, #f5576c); } /* Ijumaa */
-        .color-6 { background: linear-gradient(45deg, #2c3e50, #000000); } /* Jumamosi */
-        .color-0 { background: linear-gradient(45deg, #f1c40f, #f39c12); } /* Jumapili */
-        .color-1 { background: linear-gradient(45deg, #3498db, #2980b9); } /* Jumatatu */
+        .color-0 { background: linear-gradient(45deg, #f1c40f, #f39c12); } 
+        .color-1 { background: linear-gradient(45deg, #3498db, #2980b9); }
+        .color-2 { background: linear-gradient(45deg, #ff0080, #7928ca); } 
+        .color-3 { background: linear-gradient(45deg, #00b4db, #0083b0); } 
+        .color-4 { background: linear-gradient(45deg, #11998e, #38ef7d); } 
+        .color-5 { background: linear-gradient(45deg, #f093fb, #f5576c); } 
+        .color-6 { background: linear-gradient(45deg, #2c3e50, #000000); } 
 
-        .user-img { width: 110px; height: 110px; border-radius: 50%; border: 4px solid var(--secondary); margin-top: 25px; object-fit: cover; }
-        .brand-name { font-size: 32px; font-weight: 900; color: var(--primary); margin: 10px 0; text-transform: uppercase; letter-spacing: 1px; }
+        .profile-container { position: relative; width: 110px; height: 110px; margin: 20px auto 10px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        .rainbow-border { position: absolute; width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8); animation: rotate 3s linear infinite; }
+        .user-img { width: 95px; height: 95px; border-radius: 50%; object-fit: cover; position: relative; z-index: 2; border: 3px solid #fff; }
+
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
 
 <div class="main-card">
-    <div class="lang-switcher">
-        <div class="lang-btn" onclick="changeLang('sw')">🇹🇿 SW</div>
-        <div class="lang-btn" onclick="changeLang('en')">🇺🇸 EN</div>
-    </div>
-
     <div id="google_translate_element"></div>
 
-    <img src="https://i.postimg.cc/QtvPx0B6/images-(20).jpg" class="jesus-top">
-    <br>
+    <img src="https://i.postimg.cc/QtvPx0B6/images-(20).jpg" class="jesus-img">
+
     <div class="date-badge" id="live-date">📅 Pakia...</div>
+    
+    <div class="reminder-box">
+        🔔 Mpendwa, usisahau kusoma Neno la leo!
+    </div>
 
     <div class="brand-name">MOSHA BIBILIA</div>
-    <p style="color: #666; font-style: italic; margin-bottom: 25px;">"Kila hatua yangu inaongozwa na Bwana"</p>
 
-    <div id="vifungo-box"></div>
+    <div id="bibilia-box"></div>
 
-    <img src="https://i.ibb.co/mVcyBZf3/1766639899602.png" class="user-img">
-    <span style="display:block; font-size:20px; font-weight:bold; color:var(--primary); margin-top:10px;">Gilbert Mosha</span>
-    <p style="color:#d81b60; font-weight:bold; font-size: 18px; margin-top: 5px;">0793770731</p>
+    <span style="display:block; font-size:20px; font-weight:900; color:var(--primary); margin-top:15px;">GILBERT MOSHA</span>
+    <p style="color:#d81b60; font-weight:bold; font-size: 16px; margin-top: 5px; margin-bottom: 0;">0793770731</p>
+
+    <div class="profile-container" onclick="checkQuran()">
+        <div class="rainbow-border"></div>
+        <img src="https://i.ibb.co/mVcyBZf3/1766639899602.png" class="user-img">
+    </div>
 </div>
 
 <script>
@@ -72,41 +86,39 @@
         new google.translate.TranslateElement({pageLanguage: 'sw', includedLanguages: 'en,sw', autoDisplay: false}, 'google_translate_element');
     }
 
-    function changeLang(langCode) {
-        var select = document.querySelector('select.goog-te-combo');
-        if (select) { select.value = langCode; select.dispatchEvent(new Event('change')); }
+    function checkQuran() {
+        alert("Shalom Gilbert! 🕌\n\nKikumbusho: Je, umeshapandisha masomo ya KURAN ya leo?");
     }
 
-    function generateSmartButtons() {
-        const container = document.getElementById('vifungo-box');
+    function generateButtons() {
+        const bibiliaContainer = document.getElementById('bibilia-box');
         const now = new Date();
         const sikuZaWiki = ["JUMAPILI", "JUMATATU", "JUMANNE", "JUMATANO", "ALHAMISI", "IJUMAA", "JUMAMOSI"];
         const miezi = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Ago", "Sep", "Okt", "Nov", "Des"];
 
         document.getElementById('live-date').innerHTML = `✨ LEO: ${now.getDate()} ${miezi[now.getMonth()]} ${now.getFullYear()} ✨`;
 
-        const startDate = new Date(2026, 1, 24); // 24 Feb
-        container.innerHTML = "";
-        
-        let tempDate = new Date(startDate);
+        const startBibilia = new Date(2026, 1, 24); 
+
+        let tempDate = new Date(startBibilia);
+        bibiliaContainer.innerHTML = ""; 
+
         while (tempDate <= now) {
-            let sikuJina = sikuZaWiki[tempDate.getDay()];
             let d = String(tempDate.getDate()).padStart(2, '0');
             let m = String(tempDate.getMonth() + 1).padStart(2, '0');
             let fileName = `${d}-${m}-${tempDate.getFullYear()}.html`;
-
-            container.innerHTML += `
+            
+            bibiliaContainer.innerHTML += `
                 <a href="${fileName}" class="btn-style color-${tempDate.getDay()}">
-                    <span>🗓️ ${sikuJina}</span>
+                    <span>🗓️ ${sikuZaWiki[tempDate.getDay()]}</span>
                     <span style="font-size:12px; opacity:0.9;">${d} ${miezi[tempDate.getMonth()]}</span>
                 </a>
             `;
             tempDate.setDate(tempDate.getDate() + 1);
         }
     }
-    generateSmartButtons();
+    generateButtons();
 </script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
-
