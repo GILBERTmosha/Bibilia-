@@ -3,54 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSHA BIBILIA - Gilbert Mosha</title>
     
     <meta name="google-site-verification" content="google177c3d8e64bb637a" />
-    <title>MOSHA BIBILIA - Neno la Uzima kwa Mpendwa</title>
-    <meta name="description" content="Karibu MOSHA BIBILIA. Pata mafundisho ya kila siku, neno la uzima, na mwongozo wa kiroho kutoka kwa Gilbert Mosha. Kila hatua inaongozwa na Bwana.">
-    <meta name="keywords" content="Mosha Bibilia, Gilbert Mosha, Neno la Uzima, Mafundisho ya Bibilia Tanzania, MoCU ICT, Gilbert Peter Mosha">
-    <meta name="author" content="Gilbert Peter Mosha">
+    <meta name="description" content="Karibu MOSHA BIBILIA. Pata mafundisho ya kila siku kutoka kwa Gilbert Mosha.">
     
-    <meta property="og:title" content="MOSHA BIBILIA - Gilbert Mosha">
-    <meta property="og:description" content="Pata neno la uzima kila siku. Imeandaliwa na Gilbert Mosha.">
-    <meta property="og:image" content="https://i.ibb.co/mVcyBZf3/1766639899602.png">
-    <meta property="og:url" content="https://gilbertmosha.github.io/">
-
     <style>
         :root { --primary: #4b0082; --secondary: #d4af37; }
+        body { font-family: 'Segoe UI', sans-serif; background: #000; margin: 0; display: flex; justify-content: center; min-height: 100vh; color: #fff; }
+
+        .main-card { max-width: 400px; width: 92%; background: #121212; padding: 25px; border-radius: 30px; border: 1px solid #333; text-align: center; margin: 20px 0; box-shadow: 0 10px 40px rgba(0,0,0,0.7); }
         
-        iframe.goog-te-banner-frame, .goog-te-banner-frame.skiptranslate { display: none !important; }
-        body { top: 0px !important; position: static !important; font-family: 'Trebuchet MS', sans-serif; background: linear-gradient(135deg, #4b0082, #d81b60); margin: 0; display: flex; justify-content: center; min-height: 100vh; }
-        #google_translate_element { display: none; }
+        .jesus-img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid var(--secondary); margin: 0 auto 15px; display: block; }
 
-        .main-card { max-width: 400px; width: 92%; background: #fff; padding: 25px; border-radius: 40px; border: 3px solid var(--secondary); text-align: center; margin: 20px 0; box-shadow: 0 20px 50px rgba(0,0,0,0.3); position: relative; }
-        
-        .jesus-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid var(--secondary); margin: 0 auto 15px; display: block; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-
-        .date-badge { background: linear-gradient(90deg, #8e44ad, #d81b60); color: white; padding: 8px 20px; border-radius: 50px; font-size: 13px; font-weight: bold; margin-bottom: 15px; display: inline-block; }
-
-        .reminder-box {
-            background: #fff3cd; color: #856404; border: 1px dashed #ffeeba;
-            padding: 10px; border-radius: 15px; font-size: 13px; font-weight: bold;
-            margin-bottom: 15px; animation: bounce 2s infinite;
+        .date-container {
+            background: linear-gradient(90deg, #d81b60, #8e44ad);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
         }
-        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
 
-        .brand-name { font-size: 26px; font-weight: 900; color: var(--primary); margin: 5px 0; text-transform: uppercase; }
+        .brand-name { font-size: 26px; font-weight: 900; color: var(--secondary); margin: 10px 0; text-transform: uppercase; letter-spacing: 1px; }
 
-        .btn-style { display: flex; justify-content: space-between; align-items: center; padding: 16px 22px; color: white; text-decoration: none; border-radius: 18px; font-weight: bold; margin: 12px 0; border: 2px solid #fff; transition: 0.3s; }
+        .btn-style { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 16px 20px; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 15px; 
+            font-weight: bold; 
+            margin: 12px 0; 
+            background: #1e1e1e; 
+            border: 1px solid #333; 
+        }
         
-        /* Rangi za Siku */
-        .color-0 { background: linear-gradient(45deg, #f1c40f, #f39c12); } 
-        .color-1 { background: linear-gradient(45deg, #3498db, #2980b9); }
-        .color-2 { background: linear-gradient(45deg, #ff0080, #7928ca); } 
-        .color-3 { background: linear-gradient(45deg, #00b4db, #0083b0); } 
-        .color-4 { background: linear-gradient(45deg, #11998e, #38ef7d); } 
-        .color-5 { background: linear-gradient(45deg, #f093fb, #f5576c); } 
-        .color-6 { background: linear-gradient(45deg, #2c3e50, #000000); } 
+        .color-0 { border-left: 5px solid #f1c40f; } .color-1 { border-left: 5px solid #3498db; }
+        .color-2 { border-left: 5px solid #e91e63; } .color-3 { border-left: 5px solid #00bcd4; }
+        .color-4 { border-left: 5px solid #4caf50; } .color-5 { border-left: 5px solid #9c27b0; }
+        .color-6 { border-left: 5px solid #607d8b; }
 
-        .profile-container { position: relative; width: 110px; height: 110px; margin: 20px auto 10px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        .profile-container { position: relative; width: 105px; height: 105px; margin: 30px auto 10px; display: flex; align-items: center; justify-content: center; }
         .rainbow-border { position: absolute; width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8); animation: rotate 3s linear infinite; }
-        .user-img { width: 95px; height: 95px; border-radius: 50%; object-fit: cover; position: relative; z-index: 2; border: 3px solid #fff; }
+        .user-img { width: 92px; height: 92px; border-radius: 50%; object-fit: cover; position: relative; z-index: 2; border: 2px solid #000; }
 
         @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
     </style>
@@ -58,38 +58,24 @@
 <body>
 
 <div class="main-card">
-    <div id="google_translate_element"></div>
-
     <img src="https://i.postimg.cc/QtvPx0B6/images-(20).jpg" class="jesus-img">
 
-    <div class="date-badge" id="live-date">📅 Pakia...</div>
-    
-    <div class="reminder-box">
-        🔔 Mpendwa, usisahau kusoma Neno la leo!
-    </div>
+    <div class="date-container" id="live-date">📅 Tarehe...</div>
 
     <div class="brand-name">MOSHA BIBILIA</div>
 
     <div id="bibilia-box"></div>
 
-    <span style="display:block; font-size:20px; font-weight:900; color:var(--primary); margin-top:15px;">GILBERT MOSHA</span>
-    <p style="color:#d81b60; font-weight:bold; font-size: 16px; margin-top: 5px; margin-bottom: 0;">0793770731</p>
+    <span style="display:block; font-size:18px; font-weight:bold; color:#fff; margin-top:20px;">GILBERT MOSHA</span>
+    <p style="color:var(--secondary); font-size: 14px; margin-top: 5px;">0793770731</p>
 
-    <div class="profile-container" onclick="checkQuran()">
+    <div class="profile-container">
         <div class="rainbow-border"></div>
         <img src="https://i.ibb.co/mVcyBZf3/1766639899602.png" class="user-img">
     </div>
 </div>
 
 <script>
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'sw', includedLanguages: 'en,sw', autoDisplay: false}, 'google_translate_element');
-    }
-
-    function checkQuran() {
-        alert("Shalom Gilbert! 🕌\n\nKikumbusho: Je, umeshapandisha masomo ya KURAN ya leo?");
-    }
-
     function generateButtons() {
         const bibiliaContainer = document.getElementById('bibilia-box');
         const now = new Date();
@@ -99,7 +85,6 @@
         document.getElementById('live-date').innerHTML = `✨ LEO: ${now.getDate()} ${miezi[now.getMonth()]} ${now.getFullYear()} ✨`;
 
         const startBibilia = new Date(2026, 1, 24); 
-
         let tempDate = new Date(startBibilia);
         bibiliaContainer.innerHTML = ""; 
 
@@ -111,7 +96,7 @@
             bibiliaContainer.innerHTML += `
                 <a href="${fileName}" class="btn-style color-${tempDate.getDay()}">
                     <span>🗓️ ${sikuZaWiki[tempDate.getDay()]}</span>
-                    <span style="font-size:12px; opacity:0.9;">${d} ${miezi[tempDate.getMonth()]}</span>
+                    <span style="font-size:12px; color:#aaa;">${d} ${miezi[tempDate.getMonth()]}</span>
                 </a>
             `;
             tempDate.setDate(tempDate.getDate() + 1);
@@ -119,6 +104,6 @@
     }
     generateButtons();
 </script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
+
